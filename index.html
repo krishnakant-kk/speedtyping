@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeedTyping</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="speedtyping.css">
+
+</head>
+
+<body>
+  
+  <hr>
+  <div class="container">
+    <p class="h1" id="heading"></p>
+    <hr>
+    <div class="elements">
+      <div class="error" id="error">err</div>
+      <div class="accuracy" id="accuracy">arcy</div>
+      <div class="timer" id="timer">timer</div>
+      <div class="wpm" id="kps">Kps</div>
+    </div>
+    <hr>
+    <div class="container-2">
+      <div class="quote-display" id="quoteDisplay"></div>
+      <textarea class="quote-input" spellcheck="false" onpaste="return false;" ondrop="return false" id="quoteInput"
+      autofocus></textarea>
+    </div>
+    <hr>
+    <span class="spnn">Text</span>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" id="inspirationQuotes" class="btn btn-success">InspirationQuotes</button>
+      <button type="button" id="meaningfulWords" class="btn btn-warning">MeaningfulWords</button>
+      <button type="button" id="randomWords" class="btn btn-danger">RandomWords</button>
+      <button type="button" id="customKeys" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">CustomKeys</button>
+    </div>
+    <hr>
+    <span class="spnn">BackGround</span>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" id="solidC" class="btn btn-success">SolidColor</button>
+      <button type="button" id="gred" class="btn btn-warning">Gradient</button>
+      <button type="button" id="rNW" class="btn btn-danger">Wallpaper</button>
+      <button type="button" id="psbg" class="btn btn-primary">PauseBackGround</button>
+    </div>
+    <hr>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter Keys</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="msg" id="msg"></div>
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+          <input type="text" class="form-control" placeholder="-" maxlength="1" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="savebtn" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="speedtyping.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
